@@ -14,7 +14,20 @@
     <module>../encryption</module>
   </modules>
   
-  
+  <profiles>
+        <profile>
+            <id>run_build</id>
+            <properties>
+                <log4j.print.sys>false</log4j.print.sys>
+            </properties>
+        </profile>
+        <profile>
+            <id>dev_build</id>
+            <properties>
+                <log4j.print.sys>true</log4j.print.sys>
+            </properties>
+        </profile>
+    </profiles>
   
   <repositories>
     <repository>
